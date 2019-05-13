@@ -41,6 +41,8 @@ class jntChain():
 			self.jnts.append(jnt.jnt)
 
 		utils.iterParenting(self.jnts)
+		# orient chain
+		jnt.orientChain()
 
 	def displayAxis(self, jnts=[]):
 		# toggle display axis

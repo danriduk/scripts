@@ -49,7 +49,7 @@ class Jnt():
         if not mc.objExists(self.jnt):
             return None
 
-        chain = [jnt for jnt in mc.listRelatives(self.jnt, type='joint', c=1, ad=1)][::-1]
+        chain = [ jnt for jnt in mc.listRelatives(self.jnt, type='joint', c=1, ad=1) ][::-1]
         chain.insert(0, self.jnt)
         return chain
 
